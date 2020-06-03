@@ -1,0 +1,226 @@
+.vs/
+# O comando a seguir funciona para download ao usar o Git for Windows:
+# curl -LOf http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+#
+# Baixe esse arquivo usando o PowerShell v3 no Windows com o seguinte comando:
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw/ -OutFile .gitignore
+#
+# ou wget:
+# wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+
+# Arquivos específicos do usuário
+* .suo
+* .user
+* .sln.docstates
+
+# Construir resultados
+[ Dd ] ebug /
+[ Rr ] elease /
+x64 /
+[ Bb ] em /
+[ Oo ] bj /
+A pasta # build atualmente é usada para scripts de construção e não deve ser ignorada
+# build /
+
+# Pacotes NuGet
+* .nupkg
+# A pasta packages pode ser ignorada devido à restauração do pacote
+** / pacotes / *
+# exceto build /, que é usado como um destino MSBuild.
+! ** / pacotes / compilação /
+# Descomente, se necessário; no entanto, geralmente será regenerado quando necessário
+# ! ** / packages / repositories.config
+
+Resultados do teste # MSTest
+[ Tt ] est [ Rr ] esult * /
+[ Bb ] uild [ Ll ] og. *
+
+* _i.c
+* _p.c
+* .ilk
+* .meta
+* .obj
+* .pch
+* .pdb
+* .pgc
+* .pgd
+* .rsp
+* .sbr
+* .tlb
+* .tli
+* .tlh
+* .tmp
+* .tmp_proj
+* .log
+* .vspscc
+* .vssscc
+.builds
+* .pidb
+* .log
+* .scc
+
+# Arquivos gerados pelo SO #
+.DS_Store *
+Ícone ?
+
+# Arquivos de cache do Visual C ++
+ipch /
+* .aps
+* .ncb
+* .opensdf
+* .sdf
+* .cachefile
+
+# Visual Studio Profiler
+* .psess
+* .vsp
+* .vspx
+
+# Kit de ferramentas de automação de orientação
+* .gpState
+
+# ReSharper é um suplemento de codificação .NET
+_ReSharper * /
+* . [ Rr ] e [ Ss ] harper
+
+# TeamCity é um complemento de compilação
+_TeamCity *
+
+# DotCover é uma ferramenta de cobertura de código
+* .dotCover
+
+# NCrunch
+* .ncrunch *
+. * crunch * .local.xml
+
+# Pasta de saída Installshield
+[ Ee ] xpress /
+
+# DocProject é um suplemento de gerador de documentação
+DocProject / buildhelp /
+DocProject / Ajuda / * .HxT
+DocProject / Ajuda / * .HxC
+DocProject / Help / * .hhc
+DocProject / Help / * .hhk
+DocProject / Help / * .hhp
+DocProject / Ajuda / Html2
+DocProject / Ajuda / html
+
+# Diretório Click-Once
+publicar /
+
+# Publicar saída da Web
+* .Publish.xml
+
+# Saída de compilação do Windows Azure
+csx
+* .build.csdef
+
+# Diretório de pacotes de aplicativos da Windows Store
+AppPackages /
+
+# Outros
+* .Cache
+ClientBin /
+[ Ss ] tyle [ Cc ] op. *
+~ $ *
+* ~
+* .dbmdl
+* . [ Pp ] ublish.xml
+* .pfx
+* .publishsettings
+modulesbin /
+tempbin /
+
+# EPiServer Site file (VPP)
+AppData /
+
+# Projetos RIA / Silverlight
+Generated_Code /
+
+# Faça backup e relate arquivos da conversão de um arquivo de projeto antigo para um mais recente
+# Versão do Visual Studio. Arquivos de backup não são necessários, porque temos o git ;-)
+_UpgradeReport_Files /
+Backup * /
+UpgradeLog * .XML
+UpgradeLog * .htm
+
+# vim
+* .txt ~
+* .swp
+* .swo
+
+# Arquivos temporários ao abrir o LibreOffice no ubuntu
+. ~ bloquear. *
+ 
+# svn
+.svn
+
+# CVS - Controle de Origem
+** / CVS /
+
+# Remanescentes da resolução de conflitos no controle de origem
+* .orig
+
+# Arquivos do SQL Server
+** / App_Data / * .mdf
+** / App_Data / * .ldf
+** / App_Data / * .sdf
+
+
+# LightSwitch gerou arquivos
+Artefatos Gerados /
+_Pvt_Extensions /
+ModelManifest.xml
+
+# =========================
+# Detritos do Windows
+# =========================
+
+# Caches de arquivos de imagem do Windows
+Thumbs.db
+ehthumbs.db
+
+# Arquivo de configuração de pasta
+Desktop.ini
+
+# Lixeira usada em compartilhamentos de arquivos
+$ RECYCLE.BIN /
+
+# Arquivos de armazenamento de serviço de desktop Mac
+.DS_Store
+
+# Cache do compilador SASS
+.sass-cache
+
+# CTP do Visual Studio 2014
+** / * .sln.ide
+
+# Visual Studio temp algo
+.vs /
+
+# dotnet stuff
+project.lock.json
+
+# VS 2015+
+* .vc.vc.opendb
+* .vc.db
+
+# Cavaleiro
+.idea /
+
+# Código do Visual Studio
+.vscode /
+
+# Pasta de saída usada pelo Webpack ou outro material FE
+** / node_modules / *
+** / wwwroot / *
+
+# SpecFlow específico
+* .feature.cs
+* .feature.xlsx. *
+* .Specs_ * .html
+
+# ####
+# Fim da lista principal de ignorados, abaixo, você coloca as configurações personalizadas por projeto (padrões ou caminho)
+# ####
